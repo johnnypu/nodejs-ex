@@ -13,7 +13,32 @@
         .starter-template {
             padding: 3rem 1.5rem;
             text-align: center;
-        }        
+        }   
+/* more */
+.more {
+	display: inline-block;
+	padding: 15px 40px;
+	background: #ce342c;
+	font-size: 17px;
+	color: #FFF;
+	letter-spacing: 1px;
+	font-weight: bold;
+	transition: all .3s;
+}
+
+.more::after {
+	content: "";
+	float: right;
+	display: block;
+	width: 9px;
+	height: 14px;
+	margin-left: 15px;
+	background: url('../images/arrow_w.png');
+}
+
+.more:hover {
+	background: #333;
+}        
     </style>
     <title>Dynasafe Solution Day</title>
 </head>
@@ -29,6 +54,7 @@
         <br />
         <h1 style="font-size: 48px;">Continuous Integration & Continuous Deploymnet Demo</h1>
         <p>Welcome to Dynasafe</p>
+        <a class="more" href="https://www.dynasafe.com.tw/en/solution_overview.aspx" >Learn more</a>
     </div>
 </main>
 
